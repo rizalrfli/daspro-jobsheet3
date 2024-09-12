@@ -6,23 +6,25 @@ public class Siakad01{
         char kelas;
         byte absen;
         double nilaiKuis, nilaiTugas, nilaiUjian, nilaiAkhir;
-        System.out.println("Masukkan nama: ");
+        System.out.print("Masukkan nama: ");
         nama = sc.nextLine();
-        System.out.println("Masukkan nim: ");
+        System.out.print("Masukkan nim: ");
         nim = sc.nextLine();
-        System.out.println("Masukkan kelas: ");
+        System.out.print("Masukkan kelas: ");
         kelas = sc.nextLine().charAt(0);
-        System.out.println("Masukkan absen: ");
+        System.out.print("Masukkan absen: ");
         absen = sc.nextByte();
-        System.out.println("Masukkan nilai kuis: ");
+        System.out.print("Masukkan nilai kuis: ");
         nilaiKuis = sc.nextDouble();
-        System.out.println("Masukkan nilai tugas: ");
+        System.out.print("Masukkan nilai tugas: ");
         nilaiTugas = sc.nextDouble();
-        System.out.println("Masukkan nilai ujian: ");
+        System.out.print("Masukkan nilai ujian: ");
         nilaiUjian = sc.nextDouble();
         nilaiAkhir = (nilaiKuis + nilaiTugas + nilaiUjian ) / 3;
-        System.out.println("Nama: " + nama + "NIM: " +nim);
-        System.out.println("Kelas: " + kelas + "Absen: " + absen);
-        System.out.println("Nilai akhir: " + nilaiAkhir);
+        System.out.println("Nama\t\t: " + nama );
+        System.out.println("NIM\t\t: " +nim);
+        System.out.println("Kelas\t\t: " + kelas);
+        System.out.println("Absen\t\t: " + absen);
+        System.out.println("Nilai akhir\t: " + nilaiAkhir);
     }
 }
